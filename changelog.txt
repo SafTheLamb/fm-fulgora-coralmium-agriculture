@@ -1,0 +1,4 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.9.0
+  Major Features:
+    - Add coralmium, a new plant native to Fulgora that dredges materials up from the oily oceans.

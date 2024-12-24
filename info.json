@@ -10,6 +10,8 @@
     "base >= 2.0.7",
     "fdsl >= 0.1.5",
     "space-age",
+    "wood-universe-assets >= 1.1.0",
+    "? early-agriculture",
     "? wood-logistics"
   ],
   "spoiling_required": true

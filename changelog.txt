@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.9.2
+  Graphics:
+    - Simplify recipe icon for Coralmium seed cracking
+    - Swap order of seed cracking and coralmium recycling
+
+---------------------------------------------------------------------------------------------------
 Version: 0.9.1
   Minor Features:
     - Recycling inert coralmium seeds now yields charged seeds instead (this is separate from Coralmium recycling)

@@ -5,7 +5,8 @@ data:extend({
     icon = "__wood-universe-assets__/graphics/technology/coralmium-recycling.png",
     icon_size = 256,
     effects = {
-      {type="unlock-recipe", recipe="coralmium-recycling"}
+      {type="unlock-recipe", recipe="coralmium-recycling"},
+      {type="unlock-recipe", recipe="inert-coralmium-seed-recycling"}
     },
     prerequisites = {"planet-discovery-fulgora"},
     research_trigger = {

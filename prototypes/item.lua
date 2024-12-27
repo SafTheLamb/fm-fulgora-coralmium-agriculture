@@ -19,9 +19,7 @@ data:extend({
     drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 10,
     default_import_location = "fulgora",
-    weight = 10 * kg,
-    fuel_category = "chemical",
-    fuel_value = "100kJ"
+    weight = 10 * kg
   },
   {
     type = "item",
@@ -46,7 +44,6 @@ data:extend({
     spoil_ticks = 30 * minute,
     spoil_result = "inert-coralmium-seed"
   },
-
   {
     type = "item",
     name = "coralmium",

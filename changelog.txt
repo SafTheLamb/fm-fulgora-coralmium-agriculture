@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.9.1
+  Minor Features:
+    - Recycling inert coralmium seeds now yields charged seeds instead (this is separate from Coralmium recycling)
+  Changes:
+    - Added chance to get Charged coralmium seeds from recycling
+    - Inert coralmium seeds are no longer burnable (since you can recycle them into charged seeds that CAN burn)
+  Bugfixes:
+    - Crash on load if stone was already removed from scrap recycling (update fdsl)
+
+---------------------------------------------------------------------------------------------------
 Version: 0.9.0
   Major Features:
     - Add coralmium, a new plant native to Fulgora that dredges materials up from the oily oceans.

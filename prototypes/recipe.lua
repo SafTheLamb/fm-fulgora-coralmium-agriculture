@@ -10,12 +10,33 @@ data:extend({
     order = "c[coralmium]-a[repolarization]",
     enabled = false,
     auto_recycle = false,
+    allow_productivity = false,
     energy_required = 10,
     ingredients = {
       {type="item", name="inert-coralmium-seed", amount=1},
       {type="fluid", name="electrolyte", amount=10},
     },
     results = {{type="item", name="charged-coralmium-seed", amount=1, ignored_by_productivity=1}}
+  },
+  {
+    type = "recipe",
+    name = "inert-coralmium-seed-recycling",
+    icons = {
+      {icon="__quality__/graphics/icons/recycling.png"},
+      {icon="__wood-universe-assets__/graphics/icons/inert-coralmium-seed.png", scale=0.4},
+      {icon="__quality__/graphics/icons/recycling-top.png"},
+      {icon="__core__/graphics/icons/tooltips/tooltip-category-electricity.png", icon_size=40, shift={8,8}, scale=0.3}
+    },
+    category = "recycling",
+    subgroup = "fulgora-processes",
+    order = "c[coralmium]-b[cracking]",
+    enabled = false,
+    auto_recycle = false,
+    energy_required = 0.875,
+    ingredients = {{type="item", name="inert-coralmium-seed", amount=1}},
+    results = {
+      {type="item", name="charged-coralmium-seed", amount=1, probability=0.25}
+    }
   },
   {
     type = "recipe",
@@ -27,21 +48,21 @@ data:extend({
     },
     category = "recycling-or-hand-crafting",
     subgroup = "fulgora-processes",
-    order = "c[coralmium]-b[recycling]",
+    order = "c[coralmium]-c[recycling]",
     enabled = false,
     auto_recycle = false,
     energy_required = 0.2,
     ingredients = {{type="item", name="coralmium", amount=1}},
-    results =
-    {
-      {type = "item", name = "inert-coralmium-seed",   amount = 1, probability = 0.03, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "plastic-bar",            amount = 1, probability = 0.80, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "stone",                  amount = 1, probability = 0.10, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "concrete",               amount = 1, probability = 0.03, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "processing-unit",        amount = 1, probability = 0.01, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "low-density-structure",  amount = 1, probability = 0.01, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "carbon",                 amount = 1, probability = 0.03, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "holmium-ore",            amount = 1, probability = 0.02, show_details_in_recipe_tooltip = false}
+    results = {
+      {type="item", name="inert-coralmium-seed",   amount=1, probability=0.03, show_details_in_recipe_tooltip=false},
+      {type="item", name="charged-coralmium-seed", amount=1, probability=0.01, show_details_in_recipe_tooltip=false, amount_spoiled=0.5},
+      {type="item", name="plastic-bar",            amount=1, probability=0.80, show_details_in_recipe_tooltip=false},
+      {type="item", name="stone",                  amount=1, probability=0.10, show_details_in_recipe_tooltip=false},
+      {type="item", name="concrete",               amount=1, probability=0.03, show_details_in_recipe_tooltip=false},
+      {type="item", name="processing-unit",        amount=1, probability=0.01, show_details_in_recipe_tooltip=false},
+      {type="item", name="low-density-structure",  amount=1, probability=0.01, show_details_in_recipe_tooltip=false},
+      {type="item", name="carbon",                 amount=1, probability=0.03, show_details_in_recipe_tooltip=false},
+      {type="item", name="holmium-ore",            amount=1, probability=0.02, show_details_in_recipe_tooltip=false}
     }
   },
   {

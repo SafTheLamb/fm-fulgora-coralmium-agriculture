@@ -24,7 +24,7 @@ data:extend({
     icons = {
       {icon="__quality__/graphics/icons/recycling.png"},
       {icon="__wood-universe-assets__/graphics/icons/inert-coralmium-seed.png", scale=0.4},
-      {icon="__quality__/graphics/icons/recycling-top.png"},
+      {icon="__quality__/graphics/icons/recycling-top.png"}
     },
     category = "recycling",
     subgroup = "fulgora-processes",

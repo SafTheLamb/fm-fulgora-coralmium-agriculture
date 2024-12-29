@@ -123,16 +123,15 @@ data:extend({
         }
       }
     },
-    mining_sound = sound_variations("__space-age__/sound/mining/axe-mining-sunnycomb", 5, 0.7),
-    mined_sound = sound_variations("__space-age__/sound/mining/mined-sunnycomb", 5, 0.6),
-    growth_ticks = 5 * minute,
+    mining_sound = sound_variations("__space-age__/sound/mining/axe-mining-iceberg", 7, 0.5),
+    mined_sound = sound_variations("__space-age__/sound/mining/mined-iceberg", 4, 0.7),
+    growth_ticks = 10 * minute,
     max_health = 50,
     collision_box = {{-0.8, -0.8}, {0.8, 0.8}},
     selection_box = {{-1, -1}, {1, 1}},
     collision_mask = {layers={player=true, ground_tile=true, train=true, is_object=true, is_lower_object=true}},
     drawing_box_vertical_extension = 0.8,
     subgroup = "trees",
-    -- order = "a[tree]-c[gleba]-a[seedable]-a[yumako-tree]",
     impact_category = "tree",
     -- factoriopedia_simulation = simulations.factoriopedia_sunnycomb,
     autoplace = {
@@ -147,7 +146,7 @@ data:extend({
     },
     ambient_sounds = {
       sound = {
-        variations = sound_variations("__space-age__/sound/world/plants/sunnycomb", 8, 0.7), -- TODO
+        variations = sound_variations("__wood-universe-assets__/sound/world/plants/coralmium", 4, 0.7),
         advanced_volume_control = {
           fades = {
             fade_in = {

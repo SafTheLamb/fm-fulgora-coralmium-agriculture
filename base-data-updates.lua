@@ -4,7 +4,7 @@ local ftech = require("__fdsl__.lib.technology")
 frep.add_result("scrap-recycling", {type="item", name="firearm-magazine", amount=1, probability=0.03, show_details_in_recipe_tooltip = false})
 frep.remove_result("scrap-recycling", "stone")
 
-ftech.add_prereq("electromagnetic-plant", "coralmium-agriculture")
+ftech.add_prereq("electromagnetic-plant", "coralmium-recycling")
 ftech.add_unlock("holmium-processing", "synthetic-wood")
 ftech.add_unlock("electromagnetic-plant", "coralmium-seed-repolarization")
 

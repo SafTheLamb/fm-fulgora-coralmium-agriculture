@@ -3,7 +3,7 @@
   "title": "Wooden Fulgora: Coralmium Agriculture",
   "description": "Synthesize wood",
   "author": "SafTheLamb",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "factorio_version": "2.0",
   "homepage": "https://github.com/SafTheLamb/fm-wood-space-age",
   "dependencies": [
@@ -12,6 +12,7 @@
     "space-age",
     "wood-universe-assets >= 1.1.1",
     "? early-agriculture",
+    "? wood-industry",
     "? wood-logistics"
   ],
   "spoiling_required": true

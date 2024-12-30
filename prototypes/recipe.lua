@@ -33,9 +33,7 @@ data:extend({
     auto_recycle = false,
     energy_required = 0.875,
     ingredients = {{type="item", name="inert-coralmium-seed", amount=1}},
-    results = {
-      {type="item", name="charged-coralmium-seed", amount=1, probability=0.25}
-    }
+    results = {{type="item", name="charged-coralmium-seed", amount=1, probability=0.25}}
   },
   {
     type = "recipe",
@@ -55,12 +53,12 @@ data:extend({
     results = {
       {type="item", name="inert-coralmium-seed",   amount=1, probability=0.03, show_details_in_recipe_tooltip=false},
       {type="item", name="charged-coralmium-seed", amount=1, probability=0.01, show_details_in_recipe_tooltip=false, amount_spoiled=0.5},
-      {type="item", name="plastic-bar",            amount=1, probability=0.80, show_details_in_recipe_tooltip=false},
+      {type="item", name="plastic-bar",            amount=1, probability=0.70, show_details_in_recipe_tooltip=false},
       {type="item", name="stone",                  amount=1, probability=0.10, show_details_in_recipe_tooltip=false},
       {type="item", name="concrete",               amount=1, probability=0.03, show_details_in_recipe_tooltip=false},
       {type="item", name="processing-unit",        amount=1, probability=0.01, show_details_in_recipe_tooltip=false},
       {type="item", name="low-density-structure",  amount=1, probability=0.01, show_details_in_recipe_tooltip=false},
-      {type="item", name="carbon",                 amount=1, probability=0.03, show_details_in_recipe_tooltip=false},
+      {type="item", name="carbon",                 amount=1, probability=0.09, show_details_in_recipe_tooltip=false},
       {type="item", name="holmium-ore",            amount=1, probability=0.02, show_details_in_recipe_tooltip=false}
     }
   },
@@ -69,22 +67,42 @@ data:extend({
     name = "synthetic-wood",
     localised_name = {lumber_item == "lumber" and "recipe-name.synthetic-lumber" or "recipe-name.synthetic-wood"},
     icons = {
-      {icon=lumber_item == "lumber" and "__wood-base-assets__/graphics/icons/lumber.png" or "__base__/graphics/icons/wood.png"},
+      {icon=(lumber_item == "lumber") and "__wood-base-assets__/graphics/icons/lumber.png" or "__base__/graphics/icons/wood.png"},
       {icon="__space-age__/graphics/icons/fluid/holmium-solution.png", shift={-8,-8}, scale=0.3}
     },
     category = "organic-or-chemistry",
     subgroup = "fulgora-processes",
     order = "d[wood]-a[synthetic-wood]",
     energy_required = 2,
-    -- enabled = false,
+    enabled = false,
     allow_productivity = true,
     auto_recycle = false,
     ingredients = {
       {type="item", name="plastic-bar", amount=2},
       {type="fluid", name="holmium-solution", amount=10}
     },
-    results = {
-      {type="item", name=lumber_item, amount=3}
-    }
+    results = {{type="item", name=lumber_item, amount=3}}
   }
 })
+
+if mods["wood-industry"] then
+  data:extend({
+    {
+      type = "recipe",
+      name = "reactivated-charcoal",
+      icons = {
+        {icon="__wood-base-assets__/graphics/icons/charcoal.png"},
+        {icon="__space-age__/graphics/icons/carbon.png", shift={-8,-8}, scale=0.3}
+      },
+      category = "kiln-smelting",
+      subgroup = "fulgora-processes",
+      order = "d[wood]-a[reactivated-charcoal]",
+      energy_required = 6.4,
+      enabled = false,
+      allow_productivity = true,
+      auto_recycle = false,
+      ingredients = {{type="item", name="carbon", amount=1}},
+      results = {{type="item", name="charcoal", amount=1}}
+    }
+  })
+end

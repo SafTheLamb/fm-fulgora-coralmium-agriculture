@@ -1,7 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.9.4
+  Minor Features:
+    - Add recipe to reprocess carbon back into activated charcoal when Wooden Industry is installed
+  Bugfixes:
+    - Electromagnetic Plant is now correctly locked behind Coralmium recycling
+
+---------------------------------------------------------------------------------------------------
 Version: 0.9.3
   Sounds:
     - Update sounds for Coralmium
+  Changes:
     - Double growing time for Coralmium
 
 ---------------------------------------------------------------------------------------------------

@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.9.5
+  Bugfixes:
+    - Add support for Fulgora extended
+
+---------------------------------------------------------------------------------------------------
 Version: 0.9.4
   Minor Features:
     - Add recipe to reprocess carbon back into activated charcoal when Wooden Industry is installed

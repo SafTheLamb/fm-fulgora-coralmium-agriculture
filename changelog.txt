@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+  Changes:
+    - Changed reactivated charcoal recipe to be a organic-or-chemistry recipe and require steam and solid fuel
+  Bugfixes:
+    - Actually add an unlock for reactivated charcoal lol
+
+---------------------------------------------------------------------------------------------------
 Version: 0.9.5
   Bugfixes:
     - Add support for Fulgora extended

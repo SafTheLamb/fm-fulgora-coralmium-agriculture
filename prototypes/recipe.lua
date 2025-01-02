@@ -90,19 +90,20 @@ if mods["wood-industry"] then
     {
       type = "recipe",
       name = "reactivated-charcoal",
-      icons = {
-        {icon="__wood-base-assets__/graphics/icons/charcoal.png"},
-        {icon="__space-age__/graphics/icons/carbon.png", shift={-8,-8}, scale=0.3}
-      },
-      category = "kiln-smelting",
+      icon = "__wood-universe-assets__/graphics/icons/reactivated-charcoal.png",
+      category = "organic-or-chemistry",
       subgroup = "fulgora-processes",
-      order = "d[wood]-a[reactivated-charcoal]",
+      order = "d[wood]-b[reactivated-charcoal]",
       energy_required = 6.4,
       enabled = false,
       allow_productivity = true,
       auto_recycle = false,
-      ingredients = {{type="item", name="carbon", amount=1}},
-      results = {{type="item", name="charcoal", amount=1}}
+      ingredients = {
+        {type="item", name="solid-fuel", amount=1},
+        {type="item", name="carbon", amount=3},
+        {type="fluid", name="steam", amount=50}
+      },
+      results = {{type="item", name="charcoal", amount=2}}
     }
   })
 end

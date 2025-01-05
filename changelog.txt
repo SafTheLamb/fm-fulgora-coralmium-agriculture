@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+  Bugfixes:
+    - Fixed technology changes not being applied, oops!
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
   Changes:
     - Changed reactivated charcoal recipe to be a organic-or-chemistry recipe and require steam and solid fuel

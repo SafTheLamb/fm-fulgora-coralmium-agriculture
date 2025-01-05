@@ -84,26 +84,3 @@ data:extend({
     results = {{type="item", name=lumber_item, amount=3}}
   }
 })
-
-if mods["wood-industry"] then
-  data:extend({
-    {
-      type = "recipe",
-      name = "reactivated-charcoal",
-      icon = "__wood-universe-assets__/graphics/icons/reactivated-charcoal.png",
-      category = "organic-or-chemistry",
-      subgroup = "fulgora-processes",
-      order = "d[wood]-b[reactivated-charcoal]",
-      energy_required = 6.4,
-      enabled = false,
-      allow_productivity = true,
-      auto_recycle = false,
-      ingredients = {
-        {type="item", name="solid-fuel", amount=1},
-        {type="item", name="carbon", amount=3},
-        {type="fluid", name="steam", amount=50}
-      },
-      results = {{type="item", name="charcoal", amount=2}}
-    }
-  })
-end

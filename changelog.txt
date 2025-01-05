@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+  Changes:
+    - Move Reactivated charcoal recipe to Wooden Industry (for Cerys compat)
+  Bugfixes:
+    - Allow placing Agricultural camps and Agricultural towers on Fulgora
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.1
   Bugfixes:
     - Fixed technology changes not being applied, oops!

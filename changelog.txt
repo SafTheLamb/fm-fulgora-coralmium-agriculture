@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+  Changes:
+    - Coralmium now yields glass when recycled (to prevent softlock on Fulgora with AAI Industry)
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.2
   Changes:
     - Move Reactivated charcoal recipe to Wooden Industry (for Cerys compat)

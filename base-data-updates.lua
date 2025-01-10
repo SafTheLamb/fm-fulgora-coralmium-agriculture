@@ -6,3 +6,7 @@ frep.remove_result("scrap-recycling", "stone")
 table.insert(data.raw["simple-entity"]["fulgoran-ruin-huge"].minable.results, {type="item", name="charged-coralmium-seed", amount_min=1, amount_max=3})
 table.insert(data.raw["simple-entity"]["fulgoran-ruin-colossal"].minable.results, {type="item", name="inert-coralmium-seed", amount_min=1, amount_max=3})
 table.insert(data.raw["simple-entity"]["fulgoran-ruin-vault"].minable.results, {type="item", name="inert-coralmium-seed", amount_min=7, amount_max=9})
+
+if mods["aai-industry"] then
+  frep.add_result("coralmium-recycling", {type="item", name="glass", amount=1, probability=0.04, show_details_in_recipe_tooltip=false})
+end

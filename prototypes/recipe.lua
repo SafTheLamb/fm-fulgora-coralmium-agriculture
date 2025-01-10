@@ -33,7 +33,8 @@ data:extend({
     auto_recycle = false,
     energy_required = 0.875,
     ingredients = {{type="item", name="inert-coralmium-seed", amount=1}},
-    results = {{type="item", name="charged-coralmium-seed", amount=1, probability=0.25}}
+    results = {{type="item", name="charged-coralmium-seed", amount=1, probability=0.25}},
+    main_product = ""
   },
   {
     type = "recipe",
@@ -48,6 +49,7 @@ data:extend({
     order = "c[coralmium]-c[recycling]",
     enabled = false,
     auto_recycle = false,
+    allow_decomposition = false,
     energy_required = 0.2,
     ingredients = {{type="item", name="coralmium", amount=1}},
     results = {
@@ -77,6 +79,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     auto_recycle = false,
+    allow_decomposition = false,
     ingredients = {
       {type="item", name="plastic-bar", amount=2},
       {type="fluid", name="holmium-solution", amount=10}

@@ -1,5 +1,3 @@
-local sounds = require("__base__.prototypes.entity.sounds")
-
 local function fulgora_tree_variations(name, variation_count, per_row, scale_multiplier, width, height, shift)
   variation_count = variation_count or 5
   per_row = per_row or 5

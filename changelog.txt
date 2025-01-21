@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+  Changes:
+    - Removed compatibility work for Fulgora Extended, as the mod now handles compatibility itself
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.3
   Changes:
     - Coralmium now yields glass when recycled (to prevent softlock on Fulgora with AAI Industry)

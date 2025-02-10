@@ -1,4 +1,5 @@
 local frep = require("__fdsl__.lib.recipe")
+local ftech = require("__fdsl__.lib.technology")
 
 frep.add_result("scrap-recycling", {type="item", name="firearm-magazine", amount=1, probability=0.03, show_details_in_recipe_tooltip = false})
 frep.remove_result("scrap-recycling", "stone")
@@ -10,3 +11,8 @@ table.insert(data.raw["simple-entity"]["fulgoran-ruin-vault"].minable.results, {
 if mods["aai-industry"] then
   frep.add_result("coralmium-recycling", {type="item", name="glass", amount=1, probability=0.04, show_details_in_recipe_tooltip=false})
 end
+
+ftech.add_unlock("holmium-processing", "synthetic-wood")
+
+ftech.add_prereq("electromagnetic-plant", "coralmium-recycling")
+ftech.add_unlock("electromagnetic-plant", "coralmium-seed-repolarization")

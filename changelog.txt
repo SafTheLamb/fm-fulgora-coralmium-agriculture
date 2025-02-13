@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+  Changes:
+    - Agricultural tower and Burnt spoilage are now unlocked by Coralmium recycling
+    - Replaced Carbon with Spoilage in Coralmium recycling, to allow crafting Agricultural towers
+    - Slightly reduce plastic yield from Coralmium recycling (60% from 70%)
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.4
   Changes:
     - Removed compatibility work for Fulgora Extended, as the mod now handles compatibility itself

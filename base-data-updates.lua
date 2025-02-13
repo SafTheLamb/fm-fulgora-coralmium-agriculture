@@ -16,3 +16,12 @@ ftech.add_unlock("holmium-processing", "synthetic-wood")
 
 ftech.add_prereq("electromagnetic-plant", "coralmium-recycling")
 ftech.add_unlock("electromagnetic-plant", "coralmium-seed-repolarization")
+
+if not mods["early-agriculture"] then
+ ftech.add_unlock("coralmium-recycling", "agricultural-tower")
+end
+
+ftech.add_unlock("coralmium-recycling", "burnt-spoilage")
+if not mods["wood-industry"] then
+ data.raw.recipe["burnt-spoilage"].category = "organic-or-chemistry"
+end

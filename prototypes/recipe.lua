@@ -55,12 +55,12 @@ data:extend({
     results = {
       {type="item", name="inert-coralmium-seed",   amount=1, probability=0.03, show_details_in_recipe_tooltip=false},
       {type="item", name="charged-coralmium-seed", amount=1, probability=0.01, show_details_in_recipe_tooltip=false, amount_spoiled=0.5},
-      {type="item", name="plastic-bar",            amount=1, probability=0.70, show_details_in_recipe_tooltip=false},
+      {type="item", name="plastic-bar",            amount=1, probability=0.60, show_details_in_recipe_tooltip=false},
+      {type="item", name="spoilage",               amount=1, probability=0.20, show_details_in_recipe_tooltip=false},
       {type="item", name="stone",                  amount=1, probability=0.10, show_details_in_recipe_tooltip=false},
-      {type="item", name="concrete",               amount=1, probability=0.03, show_details_in_recipe_tooltip=false},
+      {type="item", name="concrete",               amount=1, probability=0.02, show_details_in_recipe_tooltip=false},
       {type="item", name="processing-unit",        amount=1, probability=0.01, show_details_in_recipe_tooltip=false},
       {type="item", name="low-density-structure",  amount=1, probability=0.01, show_details_in_recipe_tooltip=false},
-      {type="item", name="carbon",                 amount=1, probability=0.09, show_details_in_recipe_tooltip=false},
       {type="item", name="holmium-ore",            amount=1, probability=0.02, show_details_in_recipe_tooltip=false}
     }
   },

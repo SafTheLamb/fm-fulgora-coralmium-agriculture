@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+  Compatibility:
+    - Add compatibility for Bioprocessing Group
+
+---------------------------------------------------------------------------------------------------
 Version: 1.1.0
   Changes:
     - Agricultural tower and Burnt spoilage are now unlocked by Coralmium recycling

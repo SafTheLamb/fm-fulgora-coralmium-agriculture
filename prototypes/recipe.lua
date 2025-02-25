@@ -1,4 +1,5 @@
 local lumber_item = mods["wood-logistics"] and settings.startup["wood-logistics-lumber"].value and "lumber" or "wood"
+local subgroup = mods["bioprocessing-tab"] and "fulgora-agriculture" or "fulgora-processes"
 
 data:extend({
   {
@@ -6,7 +7,7 @@ data:extend({
     name = "coralmium-seed-repolarization",
     localised_name = {"recipe-name.coralmium-seed-repolarization"},
     category = "electromagnetics",
-    subgroup = "fulgora-processes",
+    subgroup = subgroup,
     order = "c[coralmium]-b[repolarization]",
     enabled = false,
     auto_recycle = false,
@@ -27,7 +28,7 @@ data:extend({
       {icon="__quality__/graphics/icons/recycling-top.png"}
     },
     category = "recycling",
-    subgroup = "fulgora-processes",
+    subgroup = subgroup,
     order = "c[coralmium]-a[cracking]",
     enabled = false,
     auto_recycle = false,
@@ -45,7 +46,7 @@ data:extend({
       {icon="__quality__/graphics/icons/recycling-top.png"}
     },
     category = "recycling-or-hand-crafting",
-    subgroup = "fulgora-processes",
+    subgroup = subgroup,
     order = "c[coralmium]-c[recycling]",
     enabled = false,
     auto_recycle = false,
@@ -73,7 +74,7 @@ data:extend({
       {icon="__space-age__/graphics/icons/fluid/holmium-solution.png", shift={-8,-8}, scale=0.3}
     },
     category = "organic-or-chemistry",
-    subgroup = "fulgora-processes",
+    subgroup = subgroup,
     order = "d[wood]-a[synthetic-wood]",
     energy_required = 2,
     enabled = false,

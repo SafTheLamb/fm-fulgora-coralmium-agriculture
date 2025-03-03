@@ -16,6 +16,7 @@ data:extend({
     },
     subgroup = subgroup,
     order = "c[coralmium]-a[inert-seed]",
+    plant_result = "inert-coralmium-seed",
     inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
     pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
     drop_sound = space_age_item_sounds.agriculture_inventory_move,

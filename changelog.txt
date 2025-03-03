@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+  Minor Features:
+    - Inert coralmium seeds can now be planted by agricultural towers as shriveled coralmium
+  Bugfixes:
+    - Fix issue where charged coralmium seeds spoiling while in the hands of inserters get stuck
+
+---------------------------------------------------------------------------------------------------
 Version: 1.1.1
   Compatibility:
     - Add compatibility for Bioprocessing Group

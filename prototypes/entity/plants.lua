@@ -87,6 +87,37 @@ local function fulgora_tree_variations(name, variation_count, per_row, scale_mul
   return variations
 end
 
+local function fulgora_seed_variations(name, variation_count)
+  local scale_multiplier = 1
+  local variations = {}
+  for i = 1, variation_count do
+    local variation = {
+      trunk = {
+        filename = "__wood-universe-assets__/graphics/icons/"..name.."-"..i..".png",
+        width = 64,
+        height = 64,
+        repeat_count = 2,
+        scale = 0.33 * scale_multiplier
+      },
+      leaves = util.empty_animation(),
+      -- leaf_generation = {
+      --   type = "create-particle",
+      --   particle_name = "leaf-particle",
+      --   initial_height = 2,
+      --   repeat_count = 0
+      -- },
+      -- branch_generation = {
+      --   type = "create-particle",
+      --   particle_name = "branch-particle",
+      --   initial_height = 2,
+      --   repeat_count = 0
+      -- }
+    }
+    table.insert(variations, variation)
+  end
+  return variations
+end
+
 local function minor_tints() -- Only for leaves where most if the colour is baked in.
   return {
     {r = 255, g = 255, b =  255},
@@ -162,5 +193,57 @@ data:extend({
       average_pause_seconds = 8
     },
     map_color = {255, 255, 255},
+  },
+  {
+    type = "plant",
+    name = "inert-coralmium-seed",
+    localised_name = {"item-name.inert-coralmium-seed"},
+    icon = "__wood-universe-assets__/graphics/icons/inert-coralmium-seed.png",
+    flags = {"placeable-neutral", "placeable-off-grid", "breaths-air"},
+    minable = {
+      mining_time = 0.5,
+      results = {{type = "item", name = "inert-coralmium-seed", amount = 1}},
+    },
+    mining_sound = sound_variations("__space-age__/sound/mining/axe-mining-iceberg", 7, 0.5),
+    mined_sound = sound_variations("__space-age__/sound/mining/mined-iceberg", 4, 0.7),
+    growth_ticks = 1,
+    max_health = 50,
+    collision_box = {{-0.3, -0.3}, {0.3, 0.3}},
+    selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+    collision_mask = {layers={player=true, ground_tile=true, train=true, is_object=true, is_lower_object=true}},
+    drawing_box_vertical_extension = 0.8,
+    subgroup = "trees",
+    impact_category = "tree",
+    -- factoriopedia_simulation = simulations.factoriopedia_sunnycomb,
+    autoplace = {
+      probability_expression = "0",
+      tile_restriction = {"oil-ocean-shallow"}
+    },
+    variations = fulgora_seed_variations("inert-coralmium-seed", 4),
+    colors = minor_tints(),
+    agricultural_tower_tint = {
+      primary = {r = 0.552, g = 0.218, b = 0.218, a = 1.000}, -- #8c3737ff
+      secondary = {r = 0.561, g = 0.613, b = 0.308, a = 1.000}, -- #8f4f4eff
+    },
+    ambient_sounds = {
+      sound = {
+        variations = sound_variations("__wood-universe-assets__/sound/world/plants/coralmium", 4, 0.7),
+        advanced_volume_control = {
+          fades = {
+            fade_in = {
+              curve_type = "cosine",
+              from = {control=0.5, volume_percentage=0.0},
+              to = {1.5, 100.0}
+            }
+          }
+        }
+      },
+      radius = 7.5,
+      min_entity_count = 2,
+      max_entity_count = 10,
+      entity_to_sound_ratio = 0.2,
+      average_pause_seconds = 8
+    },
+    map_color = {128, 128, 128},
   }
 })

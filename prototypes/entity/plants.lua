@@ -97,6 +97,7 @@ local function fulgora_seed_variations(name, variation_count)
         width = 64,
         height = 64,
         repeat_count = 2,
+        shift = {0,0},
         scale = 0.33 * scale_multiplier
       },
       leaves = util.empty_animation(),

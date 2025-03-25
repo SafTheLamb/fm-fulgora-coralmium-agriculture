@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.4
+  Balancing:
+    - Increase stone yielded from coralmium (20% from 10%)
+    - Decrease spoilage yielded from coralmium (10% from 20%)
+
+---------------------------------------------------------------------------------------------------
 Version: 1.1.3
   Compatibility:
     - Fix compatibility for quality seeds

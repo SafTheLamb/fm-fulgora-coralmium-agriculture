@@ -7,12 +7,12 @@ data:extend({
   {
     type = "item",
     name = "inert-coralmium-seed",
-    icon = "__wood-universe-assets__/graphics/icons/inert-coralmium-seed.png",
+    icon = "__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed.png",
     pictures = {
-      {size=64, filename="__wood-universe-assets__/graphics/icons/inert-coralmium-seed-1.png", scale=0.5, mipmap_count=4},
-      {size=64, filename="__wood-universe-assets__/graphics/icons/inert-coralmium-seed-2.png", scale=0.5, mipmap_count=4},
-      {size=64, filename="__wood-universe-assets__/graphics/icons/inert-coralmium-seed-3.png", scale=0.5, mipmap_count=4},
-      {size=64, filename="__wood-universe-assets__/graphics/icons/inert-coralmium-seed-4.png", scale=0.5, mipmap_count=4},
+      {size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed-1.png", scale=0.5, mipmap_count=4},
+      {size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed-2.png", scale=0.5, mipmap_count=4},
+      {size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed-3.png", scale=0.5, mipmap_count=4},
+      {size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed-4.png", scale=0.5, mipmap_count=4},
     },
     subgroup = subgroup,
     order = "c[coralmium]-a[inert-seed]",
@@ -28,9 +28,9 @@ data:extend({
     type = "item",
     name = "charged-coralmium-seed",
     localised_name={"item-name.charged-coralmium-seed"},
-    icon = "__wood-universe-assets__/graphics/icons/charged-coralmium-seed.png",
+    icon = "__fulgora-coralmium-agriculture__/graphics/icons/charged-coralmium-seed.png",
     pictures = {
-      {size=64, filename="__wood-universe-assets__/graphics/icons/charged-coralmium-seed.png", scale=1/3, mipmap_count=4}
+      {size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/charged-coralmium-seed.png", scale=1/3, mipmap_count=4}
     },
     subgroup = subgroup,
     order = "c[coralmium]-b[charged-seed]",
@@ -50,14 +50,14 @@ data:extend({
   {
     type = "item",
     name = "coralmium",
-    icon = "__wood-universe-assets__/graphics/icons/coralmium.png",
+    icon = "__fulgora-coralmium-agriculture__/graphics/icons/coralmium.png",
     pictures = {
-      { size=64, filename="__wood-universe-assets__/graphics/icons/coralmium.png",   scale=0.5, mipmap_count=4},
-      { size=64, filename="__wood-universe-assets__/graphics/icons/coralmium-1.png", scale=0.5, mipmap_count=4},
-      { size=64, filename="__wood-universe-assets__/graphics/icons/coralmium-2.png", scale=0.5, mipmap_count=4},
-      { size=64, filename="__wood-universe-assets__/graphics/icons/coralmium-3.png", scale=0.5, mipmap_count=4},
-      { size=64, filename="__wood-universe-assets__/graphics/icons/coralmium-4.png", scale=0.5, mipmap_count=4},
-      { size=64, filename="__wood-universe-assets__/graphics/icons/coralmium-5.png", scale=0.5, mipmap_count=4}
+      { size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/coralmium.png",   scale=0.5, mipmap_count=4},
+      { size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/coralmium-1.png", scale=0.5, mipmap_count=4},
+      { size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/coralmium-2.png", scale=0.5, mipmap_count=4},
+      { size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/coralmium-3.png", scale=0.5, mipmap_count=4},
+      { size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/coralmium-4.png", scale=0.5, mipmap_count=4},
+      { size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/coralmium-5.png", scale=0.5, mipmap_count=4}
     },
     subgroup = subgroup,
     order = "c[coralmium]-c[coralmium]",

@@ -2,7 +2,7 @@ data:extend({
   {
     type = "technology",
     name = "coralmium-recycling",
-    icon = "__wood-universe-assets__/graphics/technology/coralmium-recycling.png",
+    icon = "__fulgora-coralmium-agriculture__/graphics/technology/coralmium-recycling.png",
     icon_size = 256,
     effects = {
       {type="unlock-recipe", recipe="coralmium-recycling"},

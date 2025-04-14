@@ -11,7 +11,7 @@ local function fulgora_tree_variations(name, variation_count, per_row, scale_mul
     local y = math.floor((i-1)/per_row) * height
     local variation = {
       trunk = {
-        filename = "__wood-universe-assets__/graphics/entity/plant/"..name.."/"..name.."-trunk.png",
+        filename = "__fulgora-coralmium-agriculture__/graphics/entity/plant/"..name.."/"..name.."-trunk.png",
         width = width,
         height = height,
         x = x,
@@ -21,7 +21,7 @@ local function fulgora_tree_variations(name, variation_count, per_row, scale_mul
         scale = 0.33 * scale_multiplier
       },
       leaves = {
-        filename = "__wood-universe-assets__/graphics/entity/plant/"..name.."/"..name.."-harvest.png",
+        filename = "__fulgora-coralmium-agriculture__/graphics/entity/plant/"..name.."/"..name.."-harvest.png",
         width = width,
         height = height,
         x = x,
@@ -31,7 +31,7 @@ local function fulgora_tree_variations(name, variation_count, per_row, scale_mul
         scale = 0.33 * scale_multiplier
       },
       normal = {
-        filename = "__wood-universe-assets__/graphics/entity/plant/"..name.."/"..name.."-normal.png",
+        filename = "__fulgora-coralmium-agriculture__/graphics/entity/plant/"..name.."/"..name.."-normal.png",
         width = width,
         height = height,
         x = x,
@@ -46,8 +46,8 @@ local function fulgora_tree_variations(name, variation_count, per_row, scale_mul
         line_length = 1,
         filenames =
         {
-          "__wood-universe-assets__/graphics/entity/plant/"..name.."/"..name.."-harvest-shadow.png",
-          "__wood-universe-assets__/graphics/entity/plant/"..name.."/"..name.."-shadow.png"
+          "__fulgora-coralmium-agriculture__/graphics/entity/plant/"..name.."/"..name.."-harvest-shadow.png",
+          "__fulgora-coralmium-agriculture__/graphics/entity/plant/"..name.."/"..name.."-shadow.png"
         },
         width = width,
         height = height,
@@ -93,7 +93,7 @@ local function fulgora_seed_variations(name, variation_count)
   for i = 1, variation_count do
     local variation = {
       trunk = {
-        filename = "__wood-universe-assets__/graphics/icons/"..name.."-"..i..".png",
+        filename = "__fulgora-coralmium-agriculture__/graphics/icons/"..name.."-"..i..".png",
         width = 64,
         height = 64,
         repeat_count = 2,
@@ -135,7 +135,7 @@ data:extend({
   {
     type = "plant",
     name = "coralmium-cluster",
-    icon = "__wood-universe-assets__/graphics/icons/coralmium-cluster.png",
+    icon = "__fulgora-coralmium-agriculture__/graphics/icons/coralmium-cluster.png",
     flags = {"placeable-neutral", "placeable-off-grid", "breaths-air"},
     minable = {
       mining_particle = "wooden-particle",
@@ -176,7 +176,7 @@ data:extend({
     },
     ambient_sounds = {
       sound = {
-        variations = sound_variations("__wood-universe-assets__/sound/world/plants/coralmium", 4, 0.7),
+        variations = sound_variations("__fulgora-coralmium-agriculture__/sound/world/plants/coralmium", 4, 0.7),
         advanced_volume_control = {
           fades = {
             fade_in = {
@@ -199,7 +199,7 @@ data:extend({
     type = "plant",
     name = "inert-coralmium-seed",
     localised_name = {"item-name.inert-coralmium-seed"},
-    icon = "__wood-universe-assets__/graphics/icons/inert-coralmium-seed.png",
+    icon = "__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed.png",
     flags = {"placeable-neutral", "placeable-off-grid", "breaths-air"},
     minable = {
       mining_time = 0.5,
@@ -228,7 +228,7 @@ data:extend({
     },
     ambient_sounds = {
       sound = {
-        variations = sound_variations("__wood-universe-assets__/sound/world/plants/coralmium", 4, 0.7),
+        variations = sound_variations("__fulgora-coralmium-agriculture__/sound/world/plants/coralmium", 4, 0.7),
         advanced_volume_control = {
           fades = {
             fade_in = {

@@ -24,7 +24,7 @@ data:extend({
     name = "inert-coralmium-seed-recycling",
     icons = {
       {icon="__quality__/graphics/icons/recycling.png"},
-      {icon="__wood-universe-assets__/graphics/icons/inert-coralmium-seed.png", scale=0.4},
+      {icon="__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed.png", scale=0.4},
       {icon="__quality__/graphics/icons/recycling-top.png"}
     },
     category = "recycling",
@@ -42,7 +42,7 @@ data:extend({
     name = "coralmium-recycling",
     icons = {
       {icon="__quality__/graphics/icons/recycling.png"},
-      {icon="__wood-universe-assets__/graphics/icons/coralmium.png", scale=0.4},
+      {icon="__fulgora-coralmium-agriculture__/graphics/icons/coralmium.png", scale=0.4},
       {icon="__quality__/graphics/icons/recycling-top.png"}
     },
     category = "recycling-or-hand-crafting",

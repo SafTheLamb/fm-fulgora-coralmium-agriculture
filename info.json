@@ -3,17 +3,17 @@
   "title": "Wooden Fulgora: Coralmium Agriculture",
   "description": "Synthesize wood from plastic by harvesting a new plant native to Fulgora",
   "author": "SafTheLamb",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "factorio_version": "2.0",
   "homepage": "https://github.com/SafTheLamb/fm-wood-space-age",
   "dependencies": [
     "base >= 2.0.7",
     "fdsl >= 0.1.6",
     "space-age",
-    "wood-universe-assets >= 1.1.2",
     "? early-agriculture",
     "? wood-industry",
-    "? wood-logistics"
+    "? wood-logistics",
+    "(?) Voidcraft >= 1.4"
   ],
   "spoiling_required": true
 }

@@ -1,26 +1,30 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 2025-04-14
+  Changes:
+    - Integrated graphics and removed dependency on Wooden Universe Assets
+    - Add "Modify vanilla" setting
+  Compatibility:
+    - Add compatibility for Voidcraft
+---------------------------------------------------------------------------------------------------
 Version: 1.1.4
   Balancing:
     - Increase stone yielded from coralmium (20% from 10%)
     - Decrease spoilage yielded from coralmium (10% from 20%)
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.3
   Compatibility:
     - Fix compatibility for quality seeds
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.2
   Minor Features:
     - Inert coralmium seeds can now be planted by agricultural towers as shriveled coralmium
   Bugfixes:
     - Fix issue where charged coralmium seeds spoiling while in the hands of inserters get stuck
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.1
   Compatibility:
     - Add compatibility for Bioprocessing Group
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.0
   Changes:
@@ -30,61 +34,51 @@ Version: 1.1.0
     - Slightly reduce plastic yield from Coralmium recycling (60% from 70%)
   Compatibility:
     - Fix compatibility with Factorissimo (relaxed the solar power surface condition)
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.4
   Changes:
     - Removed compatibility work for Fulgora Extended, as the mod now handles compatibility itself
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.3
   Changes:
     - Coralmium now yields glass when recycled (to prevent softlock on Fulgora with AAI Industry)
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.2
   Changes:
     - Move Reactivated charcoal recipe to Wooden Industry (for Cerys compat)
   Bugfixes:
     - Allow placing Agricultural camps and Agricultural towers on Fulgora
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.1
   Bugfixes:
     - Fixed technology changes not being applied, oops!
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
   Changes:
     - Changed reactivated charcoal recipe to be a organic-or-chemistry recipe and require steam and solid fuel
   Bugfixes:
     - Actually add an unlock for reactivated charcoal lol
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.9.5
   Bugfixes:
     - Add support for Fulgora extended
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.9.4
   Minor Features:
     - Add recipe to reprocess carbon back into activated charcoal when Wooden Industry is installed
   Bugfixes:
     - Electromagnetic Plant is now correctly locked behind Coralmium recycling
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.9.3
   Sounds:
     - Update sounds for Coralmium
   Changes:
     - Double growing time for Coralmium
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.9.2
   Graphics:
     - Simplify recipe icon for Coralmium seed cracking
     - Swap order of seed cracking and coralmium recycling
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.9.1
   Minor Features:
@@ -94,7 +88,6 @@ Version: 0.9.1
     - Inert coralmium seeds are no longer burnable (since you can recycle them into charged seeds that CAN burn)
   Bugfixes:
     - Crash on load if stone was already removed from scrap recycling (update fdsl)
-
 ---------------------------------------------------------------------------------------------------
 Version: 0.9.0
   Major Features:

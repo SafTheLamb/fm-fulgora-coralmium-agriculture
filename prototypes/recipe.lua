@@ -70,7 +70,7 @@ data:extend({
     name = "synthetic-wood",
     localised_name = {lumber_item == "lumber" and "recipe-name.synthetic-lumber" or "recipe-name.synthetic-wood"},
     icons = {
-      {icon=(lumber_item == "lumber") and "__wood-base-assets__/graphics/icons/lumber.png" or "__base__/graphics/icons/wood.png"},
+      {icon=(lumber_item == "lumber") and "__wood-logistics__/graphics/icons/lumber.png" or "__base__/graphics/icons/wood.png"},
       {icon="__space-age__/graphics/icons/fluid/holmium-solution.png", shift={-8,-8}, scale=0.3}
     },
     category = "organic-or-chemistry",

@@ -10,7 +10,8 @@ if settings.startup["coralmium-modify-vanilla"].value then
     frep.add_ingredient("electromagnetic-plant", {type="item", name=lumber_item, amount=100})
   end
   if not mods["wood-industry"] then
-    data.raw.recipe["burnt-spoilage"].category = "organic-or-chemistry"
+    frep.add_category("burnt-spoilage", "chemistry")
+    data.raw.recipe["burnt-spoilage"].allow_decomposition = false
   end
 end
 

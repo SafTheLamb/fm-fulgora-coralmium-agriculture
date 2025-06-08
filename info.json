@@ -11,7 +11,7 @@
   },
   "dependencies": [
     "base >= 2.0.7",
-    "fdsl >= 0.1.6",
+    "fdsl >= 0.2.1",
     "space-age",
     "? early-agriculture",
     "? wood-industry",

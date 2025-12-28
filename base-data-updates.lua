@@ -19,5 +19,5 @@ table.insert(data.raw["simple-entity"]["fulgoran-ruin-colossal"].minable.results
 table.insert(data.raw["simple-entity"]["fulgoran-ruin-vault"].minable.results, {type="item", name="inert-coralmium-seed", amount_min=7, amount_max=9})
 
 if mods["aai-industry"] or (mods["crushing-industry"] and settings.startup["crushing-industry-glass"].value) then
-  frep.add_result("coralmium-recycling", {type="item", name="glass", amount=1, probability=0.04, show_details_in_recipe_tooltip=false})
+  frep.add_result("coralmium-recycling", {type="item", name="glass", amount=1, probability=0.02, show_details_in_recipe_tooltip=false})
 end

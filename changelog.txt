@@ -2,6 +2,9 @@
 Version: 1.2.6
 Date: ????
   Changes:
+    - Added 5% ice to coralmium recycling to help with the endless water deficit on Fulgora
+    - Reduced stone probability from 0.20 to 0.15 to compensate (-25%)
+    - Reduced glass probability from 0.04 to 0.02 (-50%), to reflect balance changes from Crushing Industry
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.5
 Date: 2025-07-20

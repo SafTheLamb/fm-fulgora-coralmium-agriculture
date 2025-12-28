@@ -9,10 +9,10 @@ data:extend({
     name = "inert-coralmium-seed",
     icon = "__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed.png",
     pictures = {
-      {size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed-1.png", scale=0.5, mipmap_count=4},
-      {size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed-2.png", scale=0.5, mipmap_count=4},
-      {size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed-3.png", scale=0.5, mipmap_count=4},
-      {size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed-4.png", scale=0.5, mipmap_count=4},
+      {size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed-1.png", scale=0.5},
+      {size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed-2.png", scale=0.5},
+      {size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed-3.png", scale=0.5},
+      {size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed-4.png", scale=0.5},
     },
     subgroup = subgroup,
     order = "c[coralmium]-a[inert-seed]",
@@ -30,7 +30,7 @@ data:extend({
     localised_name={"item-name.charged-coralmium-seed"},
     icon = "__fulgora-coralmium-agriculture__/graphics/icons/charged-coralmium-seed.png",
     pictures = {
-      {size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/charged-coralmium-seed.png", scale=1/3, mipmap_count=4}
+      {size=64, filename="__fulgora-coralmium-agriculture__/graphics/icons/charged-coralmium-seed.png", scale=1/3}
     },
     subgroup = subgroup,
     order = "c[coralmium]-b[charged-seed]",

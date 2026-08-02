@@ -6,7 +6,7 @@ data:extend({
 		type = "recipe",
 		name = "coralmium-seed-repolarization",
 		localised_name = {"recipe-name.coralmium-seed-repolarization"},
-		category = "electromagnetics",
+		categories = {"electromagnetics"},
 		subgroup = subgroup,
 		order = "c[coralmium]-b[repolarization]",
 		enabled = false,
@@ -27,7 +27,7 @@ data:extend({
 			{icon="__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed.png", scale=0.4},
 			{icon="__quality__/graphics/icons/recycling-top.png"}
 		},
-		category = "recycling",
+		categories = {"recycling"},
 		subgroup = subgroup,
 		order = "c[coralmium]-a[cracking]",
 		enabled = false,
@@ -45,7 +45,7 @@ data:extend({
 			{icon="__fulgora-coralmium-agriculture__/graphics/icons/coralmium.png", scale=0.4},
 			{icon="__quality__/graphics/icons/recycling-top.png"}
 		},
-		category = "recycling-or-hand-crafting",
+		categories = {"recycling", "hand-crafting"},
 		subgroup = subgroup,
 		order = "c[coralmium]-c[recycling]",
 		enabled = false,
@@ -74,7 +74,7 @@ data:extend({
 			{icon=(lumber_item == "lumber") and "__wood-logistics__/graphics/icons/lumber.png" or "__base__/graphics/icons/wood.png"},
 			{icon="__space-age__/graphics/icons/fluid/holmium-solution.png", shift={-8,-8}, scale=0.3}
 		},
-		category = "organic-or-chemistry",
+		categories = {"organic", "chemistry"},
 		subgroup = subgroup,
 		order = "d[wood]-a[synthetic-wood]",
 		energy_required = 2,

@@ -23,9 +23,9 @@ data:extend({
 		type = "recipe",
 		name = "inert-coralmium-seed-recycling",
 		icons = {
-			{icon="__quality__/graphics/icons/recycling.png"},
+			{icon="__recycler__/graphics/icons/recycling.png"},
 			{icon="__fulgora-coralmium-agriculture__/graphics/icons/inert-coralmium-seed.png", scale=0.4},
-			{icon="__quality__/graphics/icons/recycling-top.png"}
+			{icon="__recycler__/graphics/icons/recycling-top.png"}
 		},
 		categories = {"recycling"},
 		subgroup = subgroup,
@@ -34,16 +34,16 @@ data:extend({
 		auto_recycle = false,
 		energy_required = 0.875,
 		ingredients = {{type="item", name="inert-coralmium-seed", amount=1}},
-		results = {{type="item", name="charged-coralmium-seed", amount=1, probability=0.25}},
+		results = {{type="item", name="charged-coralmium-seed", amount=1, independent_probability=0.25}},
 		main_product = ""
 	},
 	{
 		type = "recipe",
 		name = "coralmium-recycling",
 		icons = {
-			{icon="__quality__/graphics/icons/recycling.png"},
+			{icon="__recycler__/graphics/icons/recycling.png"},
 			{icon="__fulgora-coralmium-agriculture__/graphics/icons/coralmium.png", scale=0.4},
-			{icon="__quality__/graphics/icons/recycling-top.png"}
+			{icon="__recycler__/graphics/icons/recycling-top.png"}
 		},
 		categories = {"recycling", "hand-crafting"},
 		subgroup = subgroup,
@@ -54,16 +54,16 @@ data:extend({
 		energy_required = 0.2,
 		ingredients = {{type="item", name="coralmium", amount=1}},
 		results = {
-			{type="item", name="inert-coralmium-seed",   amount=1, probability=0.03, show_details_in_recipe_tooltip=false},
-			{type="item", name="charged-coralmium-seed", amount=1, probability=0.01, show_details_in_recipe_tooltip=false, amount_spoiled=0.5},
-			{type="item", name="plastic-bar",            amount=1, probability=0.60, show_details_in_recipe_tooltip=false},
-			{type="item", name="stone",                  amount=1, probability=0.15, show_details_in_recipe_tooltip=false},
-			{type="item", name="spoilage",               amount=1, probability=0.10, show_details_in_recipe_tooltip=false},
-			{type="item", name="ice",                    amount=1, probability=0.05, show_details_in_recipe_tooltip=false},
-			{type="item", name="concrete",               amount=1, probability=0.02, show_details_in_recipe_tooltip=false},
-			{type="item", name="processing-unit",        amount=1, probability=0.01, show_details_in_recipe_tooltip=false},
-			{type="item", name="low-density-structure",  amount=1, probability=0.01, show_details_in_recipe_tooltip=false},
-			{type="item", name="holmium-ore",            amount=1, probability=0.02, show_details_in_recipe_tooltip=false}
+			{type="item", name="inert-coralmium-seed",   amount=1, independent_probability=0.03, show_details_in_recipe_tooltip=false},
+			{type="item", name="charged-coralmium-seed", amount=1, independent_probability=0.01, show_details_in_recipe_tooltip=false, amount_spoiled=0.75},
+			{type="item", name="plastic-bar",            amount=1, shared_probability={min=0, max=0.30}, show_details_in_recipe_tooltip=false},
+			{type="item", name="stone",                  amount=1, shared_probability={min=0.30, max=0.42}, show_details_in_recipe_tooltip=false},
+			{type="item", name="spoilage",               amount=1, shared_probability={min=0.42, max=0.50}, show_details_in_recipe_tooltip=false},
+			{type="item", name="ice",                    amount=1, shared_probability={min=0.50, max=0.55}, show_details_in_recipe_tooltip=false},
+			{type="item", name="concrete",               amount=1, shared_probability={min=0.55, max=0.57}, show_details_in_recipe_tooltip=false},
+			{type="item", name="processing-unit",        amount=1, shared_probability={min=0.57, max=0.58}, show_details_in_recipe_tooltip=false},
+			{type="item", name="low-density-structure",  amount=1, shared_probability={min=0.58, max=0.59}, show_details_in_recipe_tooltip=false},
+			{type="item", name="holmium-ore",            amount=1, shared_probability={min=0.59, max=0.60}, show_details_in_recipe_tooltip=false},
 		}
 	},
 	{

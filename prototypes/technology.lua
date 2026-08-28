@@ -11,7 +11,7 @@ data:extend({
     prerequisites = {"planet-discovery-fulgora"},
     research_trigger = {
       type = "mine-entity",
-      entity = "coralmium-cluster"
+      entities = {"coralmium-cluster"}
     }
   }
 })

@@ -1,22 +1,22 @@
 {
-  "name": "fulgora-coralmium-agriculture",
-  "title": "Coralmium Agriculture",
-  "description": "Synthesize wood from plastic by harvesting a new plant native to Fulgora",
-  "author": "SafTheLamb",
-  "version": "1.2.8",
-  "factorio_version": "2.0",
-  "homepage": "https://github.com/SafTheLamb/fm-wood-space-age",
-  "package": {
-    "ignore": ["thumbnail.afphoto", "**/*.afphoto", "**/*.ase", "**/*.afphoto~lock~", "**/*.pdn"]
-  },
-  "dependencies": [
-    "base >= 2.0.7",
-    "fdsl >= 0.2.1",
-    "space-age",
-    "? early-agriculture",
-    "? wood-industry",
-    "? wood-logistics",
-    "(?) Voidcraft >= 1.4"
-  ],
-  "spoiling_required": true
+	"name": "fulgora-coralmium-agriculture",
+	"title": "Coralmium Agriculture",
+	"description": "Synthesize wood from plastic by harvesting a new plant native to Fulgora",
+	"author": "SafTheLamb",
+	"version": "1.3.0",
+	"factorio_version": "2.1",
+	"homepage": "https://github.com/SafTheLamb/fm-wood-space-age",
+	"package": {
+		"ignore": ["thumbnail.afphoto", "**/*.afphoto", "**/*.ase", "**/*.afphoto~lock~", "**/*.pdn"]
+	},
+	"dependencies": [
+		"base >= 2.0.7",
+		"fdsl >= 0.5.0",
+		"space-age",
+		"? early-agriculture",
+		"? wood-industry",
+		"? wood-logistics",
+		"(?) Voidcraft >= 1.4"
+	],
+	"spoiling_required": true
 }

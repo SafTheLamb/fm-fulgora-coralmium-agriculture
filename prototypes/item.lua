@@ -42,7 +42,7 @@ data:extend({
     stack_size = 10,
     default_import_location = "fulgora",
     weight = 10 * kg,
-    fuel_category = "chemical",
+    fuel_categories = {"chemical"},
     fuel_value = "10MJ",
     spoil_ticks = 30 * minute,
     spoil_result = "inert-coralmium-seed"

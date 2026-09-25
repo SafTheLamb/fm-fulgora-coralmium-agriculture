@@ -10,7 +10,7 @@
 		"ignore": ["thumbnail.afphoto", "**/*.afphoto", "**/*.ase", "**/*.afphoto~lock~", "**/*.pdn"]
 	},
 	"dependencies": [
-		"base >= 2.0.7",
+		"base >= 2.1.20",
 		"fdsl >= 0.5.0",
 		"space-age",
 		"? early-agriculture",

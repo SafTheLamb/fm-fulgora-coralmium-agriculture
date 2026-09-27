@@ -166,7 +166,7 @@ data:extend({
     -- factoriopedia_simulation = simulations.factoriopedia_sunnycomb,
     autoplace = {
       probability_expression = "0",
-      tile_restriction = {"oil-ocean-shallow"}
+      tile_restriction = {"oil-ocean-shallow", "oil-ocean-shallow-2"}
     },
     variations = fulgora_tree_variations("coralmium", 10, 5, nil, 3200/5, 1120/2),
     colors = minor_tints(),
